@@ -1,0 +1,7 @@
+:Date: Tue, 03 Jul 2012 21:48:54 +0200
+:Subject: Why you shouldn't be using Ohloh
+
+Here's why:
+http://www.ohloh.net/forums/10/topics/5592
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
