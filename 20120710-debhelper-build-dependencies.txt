@@ -1,0 +1,17 @@
+:Date: Tue, 10 Jul 2012 16:29:27 +0200
+:Subject: Pet peeves: debhelper build-dependencies
+
+::
+
+   $ zcat Sources.gz | grep -o 'debhelper (>= 9.0[^)]*)' | sort | uniq -c | sort -rn
+        47 debhelper (>= 9.0.0)
+        13 debhelper (>= 9.0)
+         4 debhelper (>= 9.0.0~)
+         3 debhelper (>= 9.0~)
+
+Hey, wake up!
+`debhelper is no longer using such versioning scheme
+<http://joeyh.name/blog/entry/version_numbers/>`_.
+Simple ``(>= 9)`` would be both shorter and less silly.
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
