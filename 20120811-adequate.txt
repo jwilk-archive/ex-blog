@@ -1,0 +1,15 @@
+:Date: Sat, 11 Aug 2012 22:08:18 +0200
+:Subject: Adequate quality
+
+I present you adequate_, a tool that checks for some common bugs in
+packages you have installed on your system. The Debian package comes
+with APT hooks, so that you'll be notified (via debconf) every time you
+install an adequately-buggy package.
+
+If you don't like broken symlinks, disappearing ``/usr/share/doc/*/``
+directories, obsolete conffiles, or ``*.py`` files without corresponding
+``*.pyc``, *adequate* is for you.
+
+.. _adequate: http://jwilk.net/software/adequate
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
