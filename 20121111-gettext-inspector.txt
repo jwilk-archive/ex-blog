@@ -1,0 +1,37 @@
+:Date: Sun, 11 Nov 2012 17:31:24 +0100
+:Subject: All those translations, how did you ever manage it?
+
+I've just released initial version of gettext-inspector_, a tool for checking
+gettext_ PO/POT/MO files. While it's in an early stage of development, it's
+already able to detect wide rage of problems_. For example, this is what it
+emits on my system::
+
+   $ gettext-inspector /usr/share/locale/*/LC_MESSAGES/*.mo | cut -d ' ' -f 1,3 | sort | uniq -c | sort -rn
+      1902 P: no-language-header-field
+      1601 P: no-version-in-project-id-version
+      1372 W: no-report-msgid-bugs-to-header-field
+       273 P: invalid-content-transfer-encoding
+       201 W: invalid-date
+        78 W: syntax-error-in-plural-forms
+        77 I: no-package-name-in-project-id-version
+        63 W: boilerplate-in-report-msgid-bugs-to
+        50 W: language-disparity
+        47 I: unknown-header-field
+        38 W: invalid-language
+        25 W: boilerplate-in-project-id-version
+        10 I: unknown-poedit-language
+         8 W: no-date-header-field
+         5 W: no-project-id-version-header-field
+         5 W: c1-control-characters
+         3 P: no-mime-version-header-field
+         3 P: no-content-transfer-encoding-header-field
+         2 W: non-portable-encoding
+         1 W: invalid-report-msgid-bugs-to
+         1 W: ancient-date
+         1 I: unable-to-determine-language
+
+.. _gettext-inspector: http://jwilk.net/software/gettext-inspector
+.. _gettext: http://www.gnu.org/software/gettext/
+.. _problems: https://bitbucket.org/jwilk/gettext-inspector/src/default/data/tags
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
