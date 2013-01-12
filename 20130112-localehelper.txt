@@ -4,10 +4,10 @@
 Setting `internationalization environment variables`_ is a bit tricky.
 For example, this::
 
-   $ LANG=sv_SE.UTF-8 date
+   $ LANG=sv_SE.UTF-8 stat /nonexistent
 
-may look like a way to make ``date(1)`` print the current time in Swedish.
-Yet there are many ways it could go wrong:
+may look like a way to make ``stat(1)`` print the error message in
+Swedish. Yet there are many ways it could go wrong:
 
 1. ``LC_MESSAGES`` could be set in the environment, overriding ``LANG``.
 
@@ -31,8 +31,8 @@ It's a bit like ``env(1)``, but it takes care of:
 
 This does the right thing::
 
-   $ localehelper LANG=sv_SE.UTF-8 date
-   lör 12 jan 2013 15:03:33 CET
+   $ localehelper LANG=sv_SE.UTF-8 stat /nonexistent
+   stat: kan inte ta status på ”/nonexistent”: Filen eller katalogen finns inte
 
 
 .. _internationalization environment variables:
