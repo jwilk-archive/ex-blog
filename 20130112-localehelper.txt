@@ -1,0 +1,43 @@
+:Date: Sat, 12 Jan 2013 15:03:31 +0100
+:Subject: internationalization environment variables
+
+Setting `internationalization environment variables`_ is a bit tricky.
+For example, this::
+
+   $ LANG=sv_SE.UTF-8 date
+
+may look like a way to make ``date(1)`` print the current time in Swedish.
+Yet there are many ways it could go wrong:
+
+1. ``LC_MESSAGES`` could be set in the environment, overriding ``LANG``.
+
+2. ``LC_ALL`` could be set, overriding both ``LC_MESSAGES`` and
+   ``LANG``.
+
+3. ``LANGUAGE`` could be set, overriding ``LC_ALL``, ``LC_MESSAGES``,
+   and ``LANG``. For extra complexity, ``LANGUAGE`` has no effect if
+   ``LC_MESSAGES`` is effectively set to ``C``. (Also, this variable is a
+   GNUism.)
+
+4. The locale could be simply missing from the system.
+
+To make these things a little less intricate, I wrote localehelper_.
+It's a bit like ``env(1)``, but it takes care of:
+
+- unsetting all internationalization variable that weren't explicitly
+  set on the command line;
+
+- if needed, generating missing locales (in a temporary location).
+
+This does the right thing::
+
+   $ localehelper LANG=sv_SE.UTF-8 date
+   lör 12 jan 2013 15:03:33 CET
+
+
+.. _internationalization environment variables:
+    http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap08.html#tag_08_02
+.. _localehelper:
+    http://jwilk.net/software/localehelper
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
