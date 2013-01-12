@@ -1,5 +1,5 @@
 :Date: Sat, 12 Jan 2013 15:03:31 +0100
-:Subject: internationalization environment variables
+:Subject: Internationalization environment variables
 
 Setting `internationalization environment variables`_ is a bit tricky.
 For example, this::
