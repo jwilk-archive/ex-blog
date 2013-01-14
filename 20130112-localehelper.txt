@@ -24,7 +24,7 @@ Swedish. Yet there are many ways it could go wrong:
 To make these things a little less intricate, I wrote localehelper_.
 It's a bit like ``env(1)``, but it takes care of:
 
-- unsetting all internationalization variable that weren't explicitly
+- unsetting all internationalization variables that weren't explicitly
   set on the command line;
 
 - if needed, generating missing locales (in a temporary location).
