@@ -1,0 +1,8 @@
+:Date: Mon, 04 Nov 2013 15:44:15 +0100
+:Subject: A-za-z | a-zA-z
+
+Releasing the shift key is hard_.
+
+.. _hard: http://codesearch.debian.net/search?q=A-za-z|a-zA-z
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
