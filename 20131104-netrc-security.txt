@@ -1,0 +1,36 @@
+:Date: Mon, 04 Nov 2013 15:44:15 +0100
+:Subject: ~/.netrc security
+
+TL;DR: don't put valuable passwords in ``~/.netrc``
+
+In the olden days, the ``~/.netrc`` file was used for storing FTP
+usernames and passwords. These days we have clients of other protocols
+that use said file.  Perhaps your IMAP or SMTP client use it. So you put
+your e-mail accounts password into ``~/.netrc``, and then meticulously
+configured the clients to always connect via TLS and to verify server
+certificates. You feel secure.
+
+But you shouldn't. Here's how an attacker capable of MiTM can exploit
+``wget`` to steal ``~/.netrc`` passwords:
+
+1\) Alice tries to download a file over HTTP::
+
+   $ wget http://xkcd.com/538/
+
+2\) Eve takes over the HTTP connection, sending a redirection response::
+
+   HTTP/1.1 303 See Other
+   Location: http://supersecuremail.example.net/
+
+3\) Alice's ``wget`` follows the redirection.
+
+4\) Eve takes over the connection to supersecuremail.example.net,
+requesting password authentication::
+
+   HTTP/1.1 401 Unauthorized
+   WWW-Authenticate: Basic realm="moo"
+
+5\) Alice's ``wget`` sends the ``supersecuremail.example.net`` password
+straight to Eve.
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
