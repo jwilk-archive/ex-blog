@@ -1,0 +1,16 @@
+:Date: Wed, 25 Dec 2013 18:35:42 +0100
+:Subject: µdput
+
+My Internet connection is too flaky to use `dput`_\(-\ `ng`_) reliably,
+so I use this tiny replacement instead::
+
+   #!/bin/sh
+   dcmd rsync --chmod=0644 -P "$@" ssh.upload.debian.org:/srv/upload.debian.org/UploadQueue/
+
+.. _dput:
+   http://packages.debian.org/unstable/dput
+
+.. _ng:
+   http://dput-ng.debian.net/
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
