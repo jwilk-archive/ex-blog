@@ -1,0 +1,57 @@
+:Date: Fri, 21 Feb 2014 14:21:13 +0100
+:Subject: For those who care about snowclones
+
+Instances of the “for those who care about X” snowclone_ on Debian
+mailing lists:
+
+* `their packages in Ubuntu <https://lists.debian.org/20060113223524.GA8733@localhost.localdomain>`_ (the original!)
+
+* `lesbians <https://lists.debian.org/20060114150040.GA9575@suffields.me.uk>`__
+
+* `Andrew Suffield <https://lists.debian.org/20060114150040.GA9575@suffields.me.uk>`__
+
+* `debian-devel-announce <https://lists.debian.org/20060118170704.GB18875@finlandia.infodrom.north.de>`__
+
+* `their packages in klik <https://lists.debian.org/8764ogqtqb.fsf@nahar.marcbrockschmidt.de>`__
+
+* `the [GFDL] GR <https://lists.debian.org/8764od8fta.fsf_-_@glaurung.internal.golden-gryphon.com>`__
+
+* `stable updates <https://lists.debian.org/20060309103207.GQ21840@finlandia.infodrom.north.de>`__
+
+* `bits from [press and events] teams <https://lists.debian.org/20060317122038.GB9697@schmehl.info>`__
+
+* `GNOME^w glib applications <https://lists.debian.org/5fabd6fd0603210642y291c7d1fm48da046e4beacf20@mail.gmail.com>`__
+
+* `experimental <https://lists.debian.org/20060411192827.GE9752@country.grep.be>`__
+
+* `Debconf <https://lists.debian.org/20060513063811.GN6357@decadentplace.org.uk>`__
+
+* `Policy §7.6 <https://lists.debian.org/200606151942.45212.madcoder@debian.org>`__
+
+* `Switzerland/Liechtenstein <https://lists.debian.org/20070202070207.GA1898@lapse.madduck.net>`__
+
+* `X <https://lists.debian.org/20080817212143.GH9606@patate.is-a-geek.org>`__
+
+* `firmware <http://womble.decadent.org.uk/blog/for-those-who-care-about-firmware.html>`__
+
+* `bts-link <https://lists.debian.org/20081030164101.GI24098@artemis.corp>`__
+
+* `lesbians <https://lists.debian.org/20081123211744.GB12944@artemis>`_ (reloaded)
+
+* `pam-ssh <https://lists.debian.org/87oczsnbp3.fsf@tarjan.ravneholm26.dk>`__
+
+* `Mercurial <https://lists.debian.org/87aayjsbeo.fsf@tarjan.ravneholm26.dk>`__
+
+* `manpages <https://lists.debian.org/20100306024909.GA22216@kunpuu.plessy.org>`__
+
+* `their packages in Debian <https://lists.debian.org/1282698543.22839.54.camel@localhost>`__
+
+* `unbound <https://lists.debian.org/20110217040737.GA17259@mycre.ws>`__
+
+* `irker <https://lists.debian.org/5065ABB8.7090805@progress-technologies.net>`__
+
+* `[team metrics] statistics <https://lists.debian.org/20130103214236.GD19361@an3as.eu>`__
+
+.. _snowclone: http://itre.cis.upenn.edu/~myl/languagelog/archives/000350.html
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
