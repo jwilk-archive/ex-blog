@@ -20,7 +20,7 @@ mailing lists:
 
 * `bits from [press and events] teams <https://lists.debian.org/20060317122038.GB9697@schmehl.info>`__
 
-* `GNOME^w glib applications <https://lists.debian.org/5fabd6fd0603210642y291c7d1fm48da046e4beacf20@mail.gmail.com>`__
+* `glib applications <https://lists.debian.org/5fabd6fd0603210642y291c7d1fm48da046e4beacf20@mail.gmail.com>`__
 
 * `experimental <https://lists.debian.org/20060411192827.GE9752@country.grep.be>`__
 
