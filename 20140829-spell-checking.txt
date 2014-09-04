@@ -1,0 +1,49 @@
+:Date: Fri, 29 Aug 2014 13:51:31 +0200
+:Subject: More spell-checking
+
+Have you ever wanted to use Lintian's spell-checker against arbitrary files?
+Now you can do it with spellintian_::
+
+   $ zrun spellintian --picky /usr/share/doc/RFC/best-current-practice/rfc*
+   /tmp/0qgJD1Xa1Y-rfc1917.txt: amoung -> among
+   /tmp/kvZtN435CE-rfc3155.txt: transfered -> transferred
+   /tmp/o093khYE09-rfc3481.txt: unecessary -> unnecessary
+   /tmp/4P0ux2cZWK-rfc6365.txt: charater -> character
+
+mwic_ (*Misspelled Words In Context*) takes a different approach. It uses
+classic spell-checking libraries (via Enchant_), but it groups misspellings and
+shows them in their contexts. That way you can quickly filter out
+false-positives, which are very common in technical texts, using visual grep::
+
+   $ zrun mwic /usr/share/doc/debian/social-contract.txt.gz
+   DFSG:
+   | …an Free Software Guidelines (DFSG)
+   | …an Free Software Guidelines (DFSG) part of the
+                                   ^^^^
+
+   Perens:
+   |    Bruce Perens later removed the Debian-spe…
+   | by Bruce Perens, refined by the other Debian…
+              ^^^^^^
+
+   Ean, Schuessler:
+   | community" was suggested by Ean Schuessler. This document was drafted
+                                 ^^^ ^^^^^^^^^^
+
+   GPL:
+   | The "GPL", "BSD", and "Artistic" lice…
+          ^^^
+
+   contrib:
+   | created "contrib" and "non-free" areas in our…
+              ^^^^^^^
+
+   CDs:
+   | their CDs. Thus, although non-free wor…
+           ^^^
+
+.. _spellintian: https://bitbucket.org/jwilk/spellintian
+.. _mwic: http://jwilk.net/software/mwic
+.. _Enchant: http://www.abisource.com/projects/enchant/
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
