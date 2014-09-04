@@ -1,0 +1,41 @@
+:Date: Thu, 04 Sep 2014 14:01:57 +0200
+:Subject: Joys of East Asian encodings
+
+In i18nspector_ I try to support all the encodings that were blessed by
+gettext_, but it turns out to be more difficult than I anticipated::
+
+   $ roundtrip() { c=$(echo $1 | iconv -t $2); printf '%s -> %s -> %s\n' $1 $c $(echo $c | iconv -f "$2"); }
+
+   $ roundtrip ¥ EUC-JP
+   ¥ -> \ -> \
+   
+   $ roundtrip ¥ SHIFT_JIS
+   ¥ -> \ -> ¥
+   
+   $ roundtrip ₩ JOHAB
+   ₩ -> \ -> ₩
+
+Now let's do the same in Python::
+
+   $ python3 -q
+   >>> roundtrip = lambda s, e: print('%s -> %s -> %s' % (s, s.encode(e).decode('ASCII', 'replace'), s.encode(e).decode(e)))
+   >>> roundtrip('¥', 'EUC-JP')
+   ¥ -> \ -> \
+   >>> roundtrip('¥', 'SHIFT_JIS')
+   ¥ -> \ -> \
+   >>> roundtrip('₩', 'JOHAB')
+   Traceback (most recent call last):
+     File "<stdin>", line 1, in <module>
+     File "<stdin>", line 1, in <lambda>
+   UnicodeEncodeError: 'johab' codec can't encode character '\u20a9' in position 0: illegal multibyte sequence
+
+So is 0x5C a backslash or a yen/won sign? Or both?
+
+And what if 0x5C could be a second byte of a two-byte character?
+What could possibly go wrong_?
+
+.. _i18nspector: http://jwilk.net/software/i18nspector
+.. _gettext: https://www.gnu.org/software/gettext/manual/html_node/Header-Entry.html#index-encoding-list
+.. _wrong: http://bugs.python.org/issue22187
+
+.. vim:tw=72 ts=3 sw=3 ft=rst
