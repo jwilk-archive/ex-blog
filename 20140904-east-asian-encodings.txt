@@ -8,10 +8,10 @@ gettext_, but it turns out to be more difficult than I anticipated::
 
    $ roundtrip ¥ EUC-JP
    ¥ -> \ -> \
-   
+
    $ roundtrip ¥ SHIFT_JIS
    ¥ -> \ -> ¥
-   
+
    $ roundtrip ₩ JOHAB
    ₩ -> \ -> ₩
 
