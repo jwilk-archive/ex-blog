@@ -46,4 +46,4 @@ false-positives, which are very common in technical texts, using visual grep::
 .. _mwic: http://jwilk.net/software/mwic
 .. _Enchant: http://www.abisource.com/projects/enchant/
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst

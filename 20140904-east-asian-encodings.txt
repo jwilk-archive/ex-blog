@@ -38,4 +38,4 @@ What could possibly go wrong_?
 .. _gettext: https://www.gnu.org/software/gettext/manual/html_node/Header-Entry.html#index-encoding-list
 .. _wrong: https://bugs.python.org/issue22187
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst

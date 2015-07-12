@@ -40,4 +40,4 @@ This does the right thing::
 .. _localehelper:
     http://jwilk.net/software/localehelper
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst

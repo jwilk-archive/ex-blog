@@ -34,4 +34,4 @@ emits on my system::
 .. _gettext: http://www.gnu.org/software/gettext/
 .. _problems: https://bitbucket.org/jwilk/gettext-inspector/src/default/data/tags
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst

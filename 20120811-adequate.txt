@@ -12,4 +12,4 @@ directories, obsolete conffiles, or ``*.py`` files without corresponding
 
 .. _adequate: http://jwilk.net/software/adequate
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst

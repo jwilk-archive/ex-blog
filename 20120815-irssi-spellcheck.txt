@@ -10,4 +10,4 @@ least crazy`_ and forked_ it.
 .. _the one that seemed least crazy: http://toxcorp.com/irc/irssi/spellcheck/
 .. _forked: http://jwilk.net/software/irssi-spellcheck
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst

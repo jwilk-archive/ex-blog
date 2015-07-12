@@ -5,4 +5,4 @@ Here's why_.
 
 .. _why: http://www.ohloh.net/forums/10/topics/5592
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst

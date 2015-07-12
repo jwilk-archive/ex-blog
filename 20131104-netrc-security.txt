@@ -33,4 +33,4 @@ requesting password authentication::
 5\) Alice's ``wget`` sends the ``supersecuremail.example.net`` password
 straight to Eve.
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst

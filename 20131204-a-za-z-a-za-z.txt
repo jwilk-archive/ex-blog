@@ -5,4 +5,4 @@ Releasing the shift key is hard_.
 
 .. _hard: http://codesearch.debian.net/search?q=A-za-z|a-zA-z
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst

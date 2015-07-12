@@ -54,4 +54,4 @@ mailing lists:
 
 .. _snowclone: http://itre.cis.upenn.edu/~myl/languagelog/archives/000350.html
 
-.. vim:tw=72 ts=3 sw=3 ft=rst
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst
