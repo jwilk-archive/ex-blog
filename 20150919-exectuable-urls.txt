@@ -1,0 +1,8 @@
+:Date: Sat, 19 Sep 2015 11:27:13 +0200
+:Subject: Executable URLs
+
+…or `how to write shell scripts without using whitespace`__.
+
+__ http://www.example.com/;a#;ysy=$(yes|head);sy=${ysy#y};s=${sy%%y*};apt-get${s}moo
+
+.. vim:tw=72 ts=3 sts=3 sw=3 ft=rst
