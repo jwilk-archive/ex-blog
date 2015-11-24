@@ -8,7 +8,7 @@ so I use this tiny replacement instead::
    dcmd rsync --chmod=0644 -P "$@" ssh.upload.debian.org:/srv/upload.debian.org/UploadQueue/
 
 .. _dput:
-   http://packages.debian.org/unstable/dput
+   https://packages.debian.org/unstable/dput
 
 .. _ng:
    http://dput-ng.debian.net/

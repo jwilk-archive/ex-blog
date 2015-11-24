@@ -11,7 +11,7 @@
 
 Hey, wake up!
 `debhelper is no longer using such versioning scheme
-<http://joeyh.name/blog/entry/version_numbers/>`_.
+<https://joeyh.name/blog/entry/version_numbers/>`_.
 Simple ``(>= 9)`` would be both shorter and less silly.
 
 .. vim:tw=72 ts=3 sts=3 sw=3 ft=rst
