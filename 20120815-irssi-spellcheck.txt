@@ -5,7 +5,7 @@ I tried many spell-checkers for irssi_, and they all sucked (and some
 of them were also completely insane_). So I took `the one that seemed
 least crazy`_ and forked_ it.
 
-.. _irssi: http://www.irssi.org/
+.. _irssi: https://www.irssi.org/
 .. _insane: http://irssi-spell.svn.sourceforge.net/viewvc/irssi-spell/trunk/irssi-spell.pl?revision=5&view=markup#l54
 .. _the one that seemed least crazy: http://toxcorp.com/irc/irssi/spellcheck/
 .. _forked: http://jwilk.net/software/irssi-spellcheck
