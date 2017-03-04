@@ -5,7 +5,7 @@ TL;DR: don't put valuable passwords in ``~/.netrc``
 
 In the olden days, the ``~/.netrc`` file was used for storing FTP
 usernames and passwords. These days we have clients of other protocols
-that use said file.  Perhaps your IMAP or SMTP client use it. So you put
+that use said file. Perhaps your IMAP or SMTP client use it. So you put
 your e-mail accounts password into ``~/.netrc``, and then meticulously
 configured the clients to always connect via TLS and to verify server
 certificates. You feel secure.
